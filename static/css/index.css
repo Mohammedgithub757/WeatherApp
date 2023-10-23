@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/index_image.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px 1000px;
+}
+.centered-input {
+    text-align: center; 
+    margin-top: 40px;
+}
+
+label {
+font-size: 20px;
+}
+
+.custom-button {
+    width: 150px; 
+    height: 40px; 
+}

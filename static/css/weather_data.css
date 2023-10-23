@@ -1,0 +1,17 @@
+body {
+    background-image: url("../images/weather_data.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px 800px;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 2px solid #333333;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+}
