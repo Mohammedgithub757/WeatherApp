@@ -12,8 +12,9 @@ def get_weather():
     param = {'q': request.form.get('city'), 'units': request.form.get('units'), 'appid': 'd6122b3b5e29e8f83d563a28fb580617'}
     response = requests.get(url,params = param)
     data = response.json()
-    return f"data : {data}"
+    return render_template("weather_data.html", weather_data = data) 
+
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = 5003)
+    app.run(host = '0.0.0.0', port = 5000)

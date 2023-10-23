@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <style>
+        body {
+            background-image: url("index_image.jpg");
+            background-repeat: no-repeat;
+            background-size: 1400px 1000px;
+        }
+        .centered-input {
+            text-align: center; /* Center the text within the container */
+            margin-top: 40px;
+        }
+        
+        label {
+        font-size: 20px;
+    }
+        
+        .custom-button {
+            width: 150px; /* Set the desired width */
+            height: 40px; /* Set the desired height */
+        }
+    </style>
 </head>
 <body>
-    <title>Search Page</title>
+    <title>Weather Information</title>
     <div class="content">
-        <h1 style="text-align: center">Weather Search for your city </h1>
-        <h3>style ="text-align: center">try it</h3>
+        <h1 style="text-align: center">WELCOME</h1>
+        <h1 style="text-align: center">Know Weather of Your City</h1>
     
         <div class="form">
             <form action="/weatherapp" method="POST">
-                <label for = 'city'> Enter City <label>
-                <input type="text" name="city" id="city">
-                <label for = 'units'> Enter units <label>
-                <input type="text" name="units" id="units">
-                <input type="submit" value="Search">
+                
+              <div class="centered-input">
+                <label><b>Enter City:</b><label>
+                <input type="text" name="city" id="city" placeholder="Enter Your City" size="30" ><br>
+              </div>
+              <div class="centered-input">
+                <label><b>Enter units:</b><label>
+                <input type="text" name="units" id="units" placeholder="Enter Units" size="30"><br>
+              </div> 
+              <div class="centered-input">  
+                <input type="submit" value="Search" class="custom-button">
+              </div>
             </form>
         </div>
     </div>

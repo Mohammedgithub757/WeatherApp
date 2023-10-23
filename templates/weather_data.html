@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information</title>
+    <style>
+        body {
+            background-image: url("weather_image4.jpg");
+            background-repeat: no-repeat;
+            background-size: 1400px 800px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 2px solid #333333;
+            padding: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>Weather Information For {{weather_data['name']}} City</center></h1>
+        <table border = "2" style = "margin-top: 60px;">
+            <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td><b>City Name</b></td>
+                <td>{{weather_data['name']}}</td>
+            </tr>
+            <tr>
+                <td><b>Temperature</b></td>
+                <td>{{weather_data['main']['temp']}}</td>
+            </tr>
+            <tr>
+                <td><b>Cloud Description</b></td>
+                <td>{{weather_data['weather'][0]['description']}}</td>
+            </tr>
+            <tr>
+                <td><b>Humidity</b></td>
+                <td>{{weather_data['main']['humidity']}}</td>
+            </tr>
+            <tr>
+                <td><b>Pressure</b></td>
+                <td>{{weather_data['main']['pressure']}}</td>
+            </tr>
+            <tr>
+                <td><b>Wind Speed</b></td>
+                <td>{{weather_data['wind']['speed']}}</td>
+            </tr>
+        </table>
+</body>
+</html>
